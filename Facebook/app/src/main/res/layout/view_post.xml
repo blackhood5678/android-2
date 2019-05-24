@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/post_background"
+        android:elevation="2dp"
+        android:padding="@dimen/margin10">
+
+        <RelativeLayout
+            android:id="@+id/llTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/section_post_action"
+                android:layout_toEndOf="@+id/ivProfile"
+                android:textColor="@color/colorTextTitle"
+                android:textSize="@dimen/textSizeTitle" />
+
+            <LinearLayout
+                android:id="@+id/section_post_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <FrameLayout
+                    android:id="@+id/edit_post_button_wrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:padding="5dp">
+
+                    <ImageButton
+                        android:id="@+id/action_edit_post"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_edit_black_24dp"
+                        android:tint="@color/colorTextParagraph" />
+                </FrameLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorLightText" />
+
+                <FrameLayout
+                    android:id="@+id/delete_post_button_wrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:padding="5dp">
+
+                    <ImageButton
+                        android:id="@+id/action_delete_post"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_delete_black_24dp"
+                        android:tint="@color/colorTextParagraph" />
+                </FrameLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivPostImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/post"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/llTop" />
+
+        <TextView
+            android:id="@+id/tvPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/margin10"
+            android:text="ddddddddddddd"
+            android:textColor="@color/colorTextParagraph"
+            android:textSize="@dimen/textSizeParagraph"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivPostImage"
+            tools:layout_editor_absoluteX="10dp" />
+    </android.support.constraint.ConstraintLayout>
+</merge>

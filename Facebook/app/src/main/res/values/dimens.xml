@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSizeSmall">18sp</dimen>
+    <dimen name="textSizeMed">24sp</dimen>
+    <dimen name="textSizeTitle">16sp</dimen>
+    <dimen name="textSizeParagraph">15sp</dimen>
+
+    <dimen name="margin10">10dp</dimen>
+    <dimen name="margin20">20dp</dimen>
+    <dimen name="margin50">50dp</dimen>
+</resources>

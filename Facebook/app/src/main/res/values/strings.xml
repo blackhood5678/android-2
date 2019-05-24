@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Facebook</string>
+
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="register">Register</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="already_account">Already a Member? Login</string>
+</resources>

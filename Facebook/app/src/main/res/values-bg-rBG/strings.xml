@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Facebook</string>
+    <string name="login">Вход</string>
+    <string name="username">Потребителско име</string>
+    <string name="password">парола</string>
+    <string name="confirm_password">потвърди паролата</string>
+    <string name="sign_up">влез</string>
+    <string name="register">регистрация</string>
+    <string name="first_name">първо име</string>
+    <string name="last_name">последно име</string>
+    <string name="email">имеил</string>
+    <string name="radio_male">мъж</string>
+    <string name="radio_female">жена</string>
+    <string name="already_account">вече сте член</string>
+</resources>

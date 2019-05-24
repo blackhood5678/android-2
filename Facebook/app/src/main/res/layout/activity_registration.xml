@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin20"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/margin10"
+            android:clipToPadding="false">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/register"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textSizeMed"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etFirstName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin50"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorWhite"
+                    android:hint="@string/first_name"
+                    android:inputType="text"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite" />
+
+                <EditText
+                    android:id="@+id/etLastName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin50"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorWhite"
+                    android:hint="@string/last_name"
+                    android:inputType="text"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite" />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin20"
+                android:backgroundTint="@color/colorWhite"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin20"
+                android:backgroundTint="@color/colorWhite"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin20"
+                android:backgroundTint="@color/colorWhite"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite" />
+
+            <RadioGroup
+                android:id="@+id/radioSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorWhite"
+                    android:checked="true"
+                    android:text="@string/radio_male"
+                    android:textColor="@color/colorWhite" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin20"
+                    android:buttonTint="@color/colorWhite"
+                    android:text="@string/radio_female"
+                    android:textColor="@color/colorWhite" />
+
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin20"
+                android:background="@color/colorDarkBlue"
+                android:text="@string/sign_up"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textSizeSmall"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAlready"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin20"
+                android:gravity="center_horizontal"
+                android:text="@string/already_account"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textSizeSmall"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
